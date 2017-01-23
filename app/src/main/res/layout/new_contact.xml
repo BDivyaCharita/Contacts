@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rl1">
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:id="@+id/image"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+
+
+    <EditText
+        android:textColor="#263238"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/name"
+        android:hint="@string/name"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:textColor="#37474F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:paddingLeft="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/number"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:orientation="horizontal"
+        android:id="@+id/ll1">
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_company"
+        android:text="@string/company"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company"
+        android:hint="@string/company"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:orientation="horizontal"
+        android:id="@+id/ll2">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_address"
+            android:text="@string/company"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:hint="@string/company"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
